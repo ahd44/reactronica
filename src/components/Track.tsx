@@ -2,8 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
 import { SongContext } from './Song';
 import Tone from '../lib/tone';
-import buildSequencerStep, { SequencerStep } from '../lib/buildSequencerStep';
-import { usePrevious } from '../lib/hooks';
+import buildSequencerStep from '../lib/buildSequencerStep';
 import { MidiNote } from '../types/midi-notes';
 
 export interface StepNoteType {

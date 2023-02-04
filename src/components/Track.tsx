@@ -81,7 +81,6 @@ const TrackConsumer: React.FC<TrackConsumerProps> = ({
   Tone.Sequence can't easily play chords. By default, arrays within steps are flattened out and subdivided. However an array of notes is our preferred way of representing chords. To get around this, buildSequencerStep() will transform notes and put them in a notes field as an array. We can then loop through and run triggerAttackRelease() to play the note/s.
   */
   const sequencerSteps = steps.map(buildSequencerStep);
-  const prevSequencerSteps: SequencerStep[] = usePrevious(sequencerSteps);
 
   useEffect(() => {
     // -------------------------------------------------------------------------

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import equal from 'fast-deep-equal';
 
 import { SongContext } from './Song';
 import Tone from '../lib/tone';
